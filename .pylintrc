@@ -1,0 +1,28 @@
+# Refer here: https://github.com/kubeflow/examples/blob/master/.pylintrc
+
+[FORMAT]
+
+# Maximum number of characters on a single line.
+max-line-length=100
+max-args=10
+max-locals=50
+
+[BASIC]
+# Regular expression which should only match function or class names that do
+# not require a docstring.
+no-docstring-rgx=.
+
+[SIMILARITIES]
+# Ignore docstrings when computing similarities.
+ignore-docstrings=yes
+
+[MESSAGE CONTROL]
+# Disable the message, report, category or checker with the given id(s).
+disable=no-member, arguments-differ, invalid-name
+
+[DESIGN]
+# Maximum number of attributes for a class (see R0902).
+max-attributes=15
+
+# Minimum number of public methods for a class (see R0903).
+min-public-methods=0
